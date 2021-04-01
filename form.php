@@ -1,7 +1,7 @@
 <?php
 
     $name = $_POST['name'];
-    $visitoremail = $_POST['email'];
+    $visitoremail = $_POST['emailaddr'];
     $message = $_POST['message'];
     $emailsubject = "New Form submission";
     $to = "vinayaknayak4321@gmail.com";
