@@ -12,7 +12,7 @@
 
     mail($to, $emailsubject, $txt, $headers);
 
-    header("Location : index.html");
+    header("Location : index.php");
   }
 
  ?>
