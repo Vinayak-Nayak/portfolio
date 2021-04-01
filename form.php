@@ -12,7 +12,7 @@
 
     mail($to, $emailsubject, $txt, $headers);
 
-    header("Location : index.php?mailsend");
+    header("Location : index.html");
   }
 
  ?>
