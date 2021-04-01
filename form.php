@@ -9,7 +9,13 @@
 
     $txt = "You have received an email from ".$name . "\n\n". $message;
 
-    mail($to, $emailsubject, $txt, $headers);
+    $mail = mail($to, $emailsubject, $txt, $headers);
+    if($mail){
+      echo "Mail sent successfully";
+    }
+    else{
+      echo "Mail not sent";
+    }
 
     header("Location : index.html");
 
