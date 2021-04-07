@@ -5,17 +5,12 @@
     $message = $_POST['message'];
     $emailsubject = "New Form submission";
     $to = "vinayaknayak4321@gmail.com";
-    $headers = "From : ". $visitoremail;
+    $headers = "From : ". $visitoremail . "\r\n";
 
     $txt = "You have received an email from ".$name . "\n\n". $message;
+    $txt = wordwrap($txt , 70);
 
-    $mail = mail($to, $emailsubject, $txt, $headers);
-    if($mail){
-      echo "Mail sent successfully";
-    }
-    else{
-      echo "Mail not sent";
-    }
+    mail($to, $emailsubject, $txt, $headers);
 
     header("Location : index.php");
 
