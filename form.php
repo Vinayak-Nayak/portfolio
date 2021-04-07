@@ -1,6 +1,6 @@
 <?php
 
-    $name = $_POST['name'];
+    $name = $_POST['visitorname'];
     $visitoremail = $_POST['emailaddr'];
     $message = $_POST['message'];
     $emailsubject = "New Form submission";
@@ -17,7 +17,7 @@
       echo "Mail not sent";
     }
 
-    header("Location : index.html");
+    header("Location : index.php");
 
 
  ?>
